@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.0 on win32)" generated="2025-11-09T23:06:48.318787" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="E:\NGOC PHAT\LEARNING\BTVN\Nam4\SOFTWARE TESTING\Test\test-mobile\RobotFramework\test.robot">
+<test id="s1-t1" name="Login With Empty Password" line="47">
+<kw name="Open App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2025-11-09T23:06:49.693271" elapsed="8.607565"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:00.126596" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]
+xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]</msg>
+<arg>${BTN_LOGIN}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-09T23:06:58.301831" elapsed="1.825741"/>
+</kw>
+<doc>Opens the app using Appium. Adjust variables at top if needed.</doc>
+<status status="PASS" start="2025-11-09T23:06:49.690738" elapsed="10.436834"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:00.132682" level="INFO">Typing text 'standard_user' into text field 'xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText[1]'</msg>
+<msg time="2025-11-09T23:07:00.874069" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.EditText[1]</msg>
+<arg>${TXB_USERNAME}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T23:07:00.127572" elapsed="0.747461"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:00.880648" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]'.</msg>
+<msg time="2025-11-09T23:07:11.585628" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]</msg>
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T23:07:00.875033" elapsed="10.710595"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:11.712517" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]</msg>
+<arg>${LBL_ERROR_MESSAGE}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-09T23:07:11.586611" elapsed="0.125906"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:11.850639" level="INFO">Element 'xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]' text is 'Password is required' </msg>
+<msg time="2025-11-09T23:07:11.851626" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]</msg>
+<msg time="2025-11-09T23:07:11.851626" level="INFO">${actual} = Password is required</msg>
+<var>${actual}</var>
+<arg>${LBL_ERROR_MESSAGE}</arg>
+<doc>Returns the text of the element with the ``locator``.</doc>
+<status status="PASS" start="2025-11-09T23:07:11.713503" elapsed="0.138123"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual}</arg>
+<arg>Password is required</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-11-09T23:07:11.851626" elapsed="0.001008"/>
+</kw>
+<kw name="Close App" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2025-11-09T23:07:11.853644" elapsed="0.755093"/>
+</kw>
+<status status="PASS" start="2025-11-09T23:07:11.853644" elapsed="0.756071"/>
+</kw>
+<doc>Enter username only and verify password-required error</doc>
+<status status="PASS" start="2025-11-09T23:06:49.688749" elapsed="22.920966"/>
+</test>
+<test id="s1-t2" name="Login With Empty Username" line="55">
+<kw name="Open App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2025-11-09T23:07:12.615218" elapsed="6.565353"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:20.174594" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]</msg>
+<arg>${BTN_LOGIN}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-09T23:07:19.180571" elapsed="0.994023"/>
+</kw>
+<doc>Opens the app using Appium. Adjust variables at top if needed.</doc>
+<status status="PASS" start="2025-11-09T23:07:12.614240" elapsed="7.560354"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:20.177074" level="INFO">Clicking element 'xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]'.</msg>
+<msg time="2025-11-09T23:07:30.681123" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]</msg>
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T23:07:20.175564" elapsed="10.505559"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:30.843097" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]</msg>
+<arg>${LBL_ERROR_MESSAGE}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-09T23:07:30.682125" elapsed="0.160972"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:30.981815" level="INFO">Element 'xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]' text is 'Username is required' </msg>
+<msg time="2025-11-09T23:07:30.981815" level="INFO">xpath criteria: //hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView[1]</msg>
+<msg time="2025-11-09T23:07:30.981815" level="INFO">${actual} = Username is required</msg>
+<var>${actual}</var>
+<arg>${LBL_ERROR_MESSAGE}</arg>
+<doc>Returns the text of the element with the ``locator``.</doc>
+<status status="PASS" start="2025-11-09T23:07:30.844614" elapsed="0.137201"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual}</arg>
+<arg>Username is required</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-11-09T23:07:30.982792" elapsed="0.000000"/>
+</kw>
+<kw name="Close App" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2025-11-09T23:07:30.983771" elapsed="0.665189"/>
+</kw>
+<status status="PASS" start="2025-11-09T23:07:30.983771" elapsed="0.665189"/>
+</kw>
+<doc>Tap login with no username and verify username-required error</doc>
+<status status="PASS" start="2025-11-09T23:07:12.612272" elapsed="19.036688"/>
+</test>
+<test id="s1-t3" name="Login With Locked Out User" line="62">
+<kw name="Open App" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-11-09T23:07:38.187109" elapsed="0.001519">Execution terminated by signal</status>
+</kw>
+<msg time="2025-11-09T23:07:38.191630" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2025-11-09T23:07:31.652440" elapsed="6.540162">Execution terminated by signal</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-11-09T23:07:38.193578" elapsed="0.000000"/>
+</kw>
+<doc>Opens the app using Appium. Adjust variables at top if needed.</doc>
+<status status="FAIL" start="2025-11-09T23:07:31.651468" elapsed="6.543135">Execution terminated by signal</status>
+</kw>
+<kw name="Close App" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-11-09T23:07:38.197549" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-11-09T23:07:38.196573" elapsed="0.002932">No application is open</status>
+</kw>
+<msg time="2025-11-09T23:07:38.201610" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-11-09T23:07:38.202601" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2025-11-09T23:07:38.196573" elapsed="0.007009">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-11-09T23:07:38.195603" elapsed="0.007979">No application is open</status>
+</kw>
+<doc>Attempt login with a locked out account and verify locked-out message</doc>
+<status status="FAIL" start="2025-11-09T23:07:31.648960" elapsed="6.555633">Setup failed:
+Execution terminated by signal
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t4" name="Login With Standard User" line="70">
+<doc>Successful login with standard_user should land on Products page</doc>
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-11-09T23:07:38.205583" elapsed="0.000977">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="Login With Wrong Account" line="77">
+<doc>Wrong password shows appropriate error message</doc>
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-11-09T23:07:38.208533" elapsed="0.000961">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" start="2025-11-09T23:06:48.322827" elapsed="49.889832"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat info="combined" combined="NOT robot:exit" pass="2" fail="1" skip="0">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="2" fail="3" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-11-09T23:07:38.191630" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg time="2025-11-09T23:07:38.201610" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
