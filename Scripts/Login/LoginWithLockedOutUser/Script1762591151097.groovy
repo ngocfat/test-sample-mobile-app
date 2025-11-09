@@ -1,0 +1,26 @@
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import constants.MobileObjects as MobileObjects
+
+// Khởi chạy ứng dụng
+Mobile.startExistingApplication('com.swaglabsmobileapp', FailureHandling.STOP_ON_FAILURE)
+
+try {
+    Mobile.tap(MobileObjects.Login.BtnLockedOutUser, 3)
+	Mobile.tap(MobileObjects.Login.BtnLogin, 3)
+	Mobile.verifyElementVisible(MobileObjects.Login.LblErrorMessage, 3)
+	
+	def expectedValue = 'Sorry, this user has been locked out.'
+	String actualValue = Mobile.getText(MobileObjects.Login.LblErrorMessage, 0)
+	Mobile.verifyEqual(actualValue, expectedValue)
+} 
+catch (Exception e) {
+    KeywordUtil.markFailed("Test Case Login thất bại. Lỗi: " + e.getMessage())
+    
+} 
+finally {
+    // Đóng ứng dụng
+    Mobile.closeApplication()
+}

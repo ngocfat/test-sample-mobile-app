@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LoginWithLockedOutUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>73a24c5d-f2bc-4c88-81fa-c1c24d3df469</testCaseGuid>
+</TestCaseEntity>
