@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify checkout button is visible and clickable</description>
+   <name>TC_CART_05 Checkout Button Visible</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-5555-5555-5555-555555555555</testCaseGuid>
+</TestCaseEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
-   <name>LoginWithLockedOutUser</name>
+   <description>Verify that locked-out user cannot log in</description>
+   <name>TC_LOGIN_03 Invalid Login - Locked Out User</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

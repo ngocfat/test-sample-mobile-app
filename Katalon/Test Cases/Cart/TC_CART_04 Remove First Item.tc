@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Remove first item from cart and verify count</description>
+   <name>TC_CART_04 Remove First Item</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-4444-4444-4444-444444444444</testCaseGuid>
+</TestCaseEntity>

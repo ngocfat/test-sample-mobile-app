@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Click the filter icon. Select Name (A to Z). Expected Result: The list is displayed in A-Z order</description>
+   <name>TC_FILTER_01 Filter by Name A-Z</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>07d6bd6f-a04c-4010-b454-59ff7bf0765d</testCaseGuid>
+</TestCaseEntity>

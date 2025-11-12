@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Click the filter icon. Select Price (high to low). Expected Result: Products are displayed in descending price order</description>
+   <name>TC_FILTER_04 Filter by Price High to Low</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d6441f7e-55a2-4aa8-84c4-058c0962bebd</testCaseGuid>
+</TestCaseEntity>

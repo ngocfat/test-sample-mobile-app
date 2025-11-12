@@ -1,3 +1,4 @@
+// Keyword/constants/MobileObjects.groovy
 package constants
 
 import com.kms.katalon.core.testobject.TestObject
@@ -6,6 +7,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 public class MobileObjects {
 
 	public static class Login {
+		// Giữ nguyên phần của bạn
 		private static final String PATH = 'Object Repository/LoginPage'
 
 		public static final TestObject TxbUsername = findTestObject("${PATH}/txbUsername")
@@ -15,11 +17,5 @@ public class MobileObjects {
 		public static final TestObject BtnLockedOutUser = findTestObject("${PATH}/btnLockedOutUser")
 		public static final TestObject BtnProblemUser = findTestObject("${PATH}/btnProblemUser")
 		public static final TestObject LblErrorMessage = findTestObject("${PATH}/lblErrorMessage")
-	}
-
-	public static class Products {
-		private static final String PATH = 'Object Repository/ProductsPage'
-
-		public static final TestObject LblProductsTitle = findTestObject('Object Repository/ProductsPage/lblProductsTitle')
 	}
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add multiple products to cart and verify count</description>
+   <name>TC_CART_03 Add Multi Products</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-3333-3333-3333-333333333333</testCaseGuid>
+</TestCaseEntity>

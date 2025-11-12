@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>LoginWithStandardUser</name>
+   <name>TC_E2E_01 Full Shopping Flow</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>73327cd2-65f9-485e-bde9-046274eabe8b</testCaseGuid>
+   <testCaseGuid>f7c46078-4094-4eee-b6af-c2db29df06bf</testCaseGuid>
 </TestCaseEntity>

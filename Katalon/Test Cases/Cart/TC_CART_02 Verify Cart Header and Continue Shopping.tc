@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify cart header and continue shopping functionality</description>
+   <name>TC_CART_02 Verify Cart Header and Continue Shopping</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1b2c3d4-2222-2222-2222-222222222222</testCaseGuid>
+</TestCaseEntity>
