@@ -18,4 +18,14 @@ public class MobileObjects {
 		public static final TestObject BtnProblemUser = findTestObject("${PATH}/btnProblemUser")
 		public static final TestObject LblErrorMessage = findTestObject("${PATH}/lblErrorMessage")
 	}
+
+	public static class Products {
+		private static final String PATH = 'Object Repository/ProductsPage'
+
+		public static final TestObject LblProductsTitle = findTestObject("${PATH}/lblProductsTitle")
+		public static final TestObject BtnSort = findTestObject("${PATH}/btnSort")
+		public static final TestObject ListItems = findTestObject("${PATH}/listItems")
+		public static final TestObject LblItemNames = findTestObject("${PATH}/lblItemNames")
+		public static final TestObject LblItemPrices = findTestObject("${PATH}/lblItemPrices")
+	}
 }

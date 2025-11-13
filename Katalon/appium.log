@@ -98,3 +98,9 @@
 [38;5;81m[547e6286][0m[38;5;151m[AppiumDriver@8fad][0m Plugin images is now handling cmd 'getScreenshot'
 [38;5;81m[547e6286][0m[38;5;151m[AppiumDriver@8fad][0m Executing default handling behavior for command 'getScreenshot'
 [38;5;81m[547e6286][0m[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/session/547e6286-a8de-4c4a-afb4-6c26b78cbb46/screenshot [39m[32m200[39m [90m515 ms - 362228[39m [90m[39m
+[38;5;81m[547e6286][0m[38;5;-127m[AndroidUiautomator2Driver@03f1][0m Shutting down because we waited 1800 seconds for a command
+[38;5;81m[547e6286][0m[38;5;151m[AppiumDriver@8fad][0m Ending session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[38;5;81m[547e6286][0m[38;5;151m[AppiumDriver@8fad][0m Removing session '547e6286-a8de-4c4a-afb4-6c26b78cbb46' from our master session list
+[38;5;81m[547e6286][0m[38;5;-127m[AndroidUiautomator2Driver@03f1][0m Did not get the confirmation of UiAutomator2 server session deletion. Original error: 'DELETE /' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+[38;5;81m[547e6286][0m[38;5;-127m[AndroidUiautomator2Driver@03f1][0m The UIA2 server did has not been terminated within 5000ms timeout. Continuing anyway
+[38;5;81m[547e6286][0m[38;5;-127m[AndroidUiautomator2Driver@03f1][0m Restoring hidden api policy to the device default configuration
