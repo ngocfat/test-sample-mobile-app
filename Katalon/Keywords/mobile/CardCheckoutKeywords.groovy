@@ -70,7 +70,7 @@ public class CartCheckoutKeywords {
 		TestObject overviewTitle = new TestObject("overviewTitle")
 		overviewTitle.addProperty("xpath", ConditionType.EQUALS, '//*[@text="CHECKOUT: OVERVIEW"]')
 		Mobile.waitForElementPresent(overviewTitle, 10)
-		
+
 		swipeUp()
 
 		TestObject finishBtn = new TestObject("finishBtn")
@@ -112,9 +112,9 @@ public class CartCheckoutKeywords {
 	def getCartItemCount() {
 		TestObject cartBadge = new TestObject("cartBadge")
 		cartBadge.addProperty("xpath", ConditionType.EQUALS, '//*[@content-desc="test-Cart"]//android.widget.TextView')
-		
+
 		boolean exists = Mobile.waitForElementPresent(cartBadge, 2, com.kms.katalon.core.model.FailureHandling.OPTIONAL)
-		
+
 		if (exists) {
 			String count = Mobile.getText(cartBadge, 0)
 			com.kms.katalon.core.util.KeywordUtil.logInfo("🔢 Cart item count: ${count}")
@@ -130,16 +130,16 @@ public class CartCheckoutKeywords {
 		// Check if we're already on cart page
 		TestObject continueBtn = new TestObject("continueShoppingBtn")
 		continueBtn.addProperty("content-desc", ConditionType.EQUALS, "test-CONTINUE SHOPPING")
-		
+
 		boolean onCart = Mobile.waitForElementPresent(continueBtn, 2, com.kms.katalon.core.model.FailureHandling.OPTIONAL)
-		
+
 		if (!onCart) {
 			clickCartIcon()
 		}
-		
+
 		Mobile.waitForElementPresent(continueBtn, 10)
 		Mobile.tap(continueBtn, 1)
-		
+
 		TestObject productsTitle = new TestObject("productsTitle")
 		productsTitle.addProperty("content-desc", ConditionType.EQUALS, "test-PRODUCTS")
 		Mobile.waitForElementPresent(productsTitle, 10)
